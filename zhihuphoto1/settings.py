@@ -43,7 +43,8 @@ DEFAULT_REQUEST_HEADERS = {
   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36",
         "Referer":"https://www.zhihu.com/question/37787176",
         "Host":"www.zhihu.com",
-        "authorization":"Bearer 2|1:0|10:1511594277|4:z_c0|92:Mi4xdXFhbEJnQUFBQUFBRUlMZWdLVlVEQ1lBQUFCZ0FsVk5KV2NHV3dBYUFxcUtwUzhQZldXaURxU2ZKdUJaLWVFWkdB|e74254d34e98903fcb43cf81334141b08cc76cc6eb8b1e621c1a2881f3e93d97"
+        #auth写自己的
+        "authorization":""
 }
 
 # Enable or disable spider middlewares
