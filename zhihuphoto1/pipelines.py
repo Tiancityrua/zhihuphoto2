@@ -5,8 +5,8 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import os
-import requests
-from zhihuphoto1 import settings
+from urllib.request import urlretrieve
+
 class Zhihuphoto1Pipeline(object):
     def process_item(self, item, spider):
         if 'imageurls' in item:
@@ -19,6 +19,4 @@ class Zhihuphoto1Pipeline(object):
                 images.append(filepath)
                 if os.path.exists(filepath):
                     continue
-                with open(filepath,'wb') as handle:
-                    response=requests.get(imageurl).content
-                    handle.write(response)
+                urlretrieve(imageurl,filepath)
